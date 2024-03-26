@@ -1,3 +1,14 @@
+export type Movie = {
+  slug: string;
+  title: string;
+  year: number;
+  rating: string;
+  actors: string[];
+  genre: string;
+  synopsis: string;
+  thumbnail: string;
+};
+
 export const movieList = [
   {
     slug: "the-shawshank-redemption",
@@ -10,6 +21,7 @@ export const movieList = [
       "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
     thumbnail:
       "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    bookmark: true,
   },
 
   /* FAULTY IMAGES, commented out */
