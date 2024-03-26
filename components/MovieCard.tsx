@@ -5,6 +5,7 @@ import Link from "next/link";
 
 interface MovieCardProps {
   year: number;
+  slug: string;
   rating: string;
   thumbnail: string;
   title: string;
