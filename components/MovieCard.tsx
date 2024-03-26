@@ -1,9 +1,11 @@
 "use client";
 import { BookmarkIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface MovieCardProps {
   year: number;
+  slug: string;
   rating: string;
   thumbnail: string;
   title: string;
@@ -11,6 +13,7 @@ interface MovieCardProps {
 }
 
 export default function MovieCard(props: MovieCardProps) {
+  // MOVE THIS FUNCTION TO CONTEXT LATER!!!!
   function handleBookMark() {
     console.log(
       "clicked! put bookmark function here :) use title or something as slug ",
@@ -18,15 +21,17 @@ export default function MovieCard(props: MovieCardProps) {
     );
   }
   return (
-    <div className="flex justify-center pt-4 lg:pl-16">
-      <div className="relative flex flex-col items-center shadow rounded-lg mt-4">
-        <Image
-          src={props.thumbnail}
-          alt={props.thumbnail}
-          width={300}
-          height={300}
-          className="object-contain rounded-t-lg "
-        />
+    <div className="flex justify-center ">
+      <div className="relative flex flex-col items-center shadow rounded-lg">
+        <Link href={`/movies/${props.slug}`}>
+          <Image
+            src={props.thumbnail}
+            alt={props.thumbnail}
+            width={300}
+            height={300}
+            className="object-contain rounded-t-lg"
+          />
+        </Link>
         <div
           className="absolute bg-yellow-400 top-0 right-0 rounded-bl-lg p-2 rounded-tr-lg cursor-pointer"
           onClick={handleBookMark}
