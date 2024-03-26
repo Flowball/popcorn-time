@@ -1,23 +1,24 @@
+import { Bookmark, Home, Search } from "lucide-react";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="bg-gray-800 py-2">
+      <ul className="flex justify-center space-x-16">
         <li>
           <Link href="/">
-            <p>Home</p>
+            <Home className="text-white" />
           </Link>
         </li>
 
         <li>
           <Link href="/favorites">
-            <p>Favorites</p>
+            <Bookmark className="text-white text-lg font-bold" />
           </Link>
         </li>
         <li>
           <Link href="/">
-            <p> Search</p>
+            <Search className="text-white text-lg font-bold" />
           </Link>
         </li>
       </ul>

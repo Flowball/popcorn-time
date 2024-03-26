@@ -18,7 +18,7 @@ export default function MovieCard(props: MovieCardProps) {
     );
   }
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center pt-4 ">
       <div className="relative flex flex-col items-center shadow rounded-lg">
         <Image
           src={props.thumbnail}
