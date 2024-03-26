@@ -12,16 +12,7 @@ interface MovieCardProps {
 }
 
 export default function MovieCard(props: MovieCardProps) {
-  function slugifyItem(item: string) {
-    const slugifiedItem = item
-      .toLowerCase()
-      .trim()
-      .replace(/[^\w\s-]/g, "")
-      .replace(/[\s_-]+/g, "-")
-      .replace(/^-+|-+$/g, "");
-
-    return slugifiedItem;
-  }
+  // MOVE THIS FUNCTION TO CONTEXT LATER!!!!
   function handleBookMark() {
     console.log(
       "clicked! put bookmark function here :) use title or something as slug ",
