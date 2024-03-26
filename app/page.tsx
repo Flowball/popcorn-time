@@ -1,3 +1,6 @@
+import MovieCard from "@/components/MovieCard";
+import { movieList } from "./data";
+
 export default function Home() {
    return (
       <main className="container">
@@ -12,4 +15,5 @@ export default function Home() {
       </div> */}
       </main>
    );
+
 }

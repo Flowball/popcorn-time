@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import MovieProvider from "./context/context";
@@ -15,11 +16,18 @@ export default function RootLayout({
 }: Readonly<{
    children: React.ReactNode;
 }>) {
-   return (
-      <html lang="en">
-         <body className={inter.className}>
-            <MovieProvider>{children}</MovieProvider>
-         </body>
-      </html>
-   );
+
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <MovieProvider>
+        <div>
+          {<Navbar />}
+          {children}
+        </div>
+          </MovieProvider>
+      </body>
+    </html>
+  );
+
 }
