@@ -12,7 +12,7 @@ interface MovieCardProps {
 }
 
 export default function MovieCard(props: MovieCardProps) {
-  function convertTitleToSlug(item: string) {
+  function slugifyItem(item: string) {
     const slugifiedItem = item
       .toLowerCase()
       .trim()
@@ -31,7 +31,7 @@ export default function MovieCard(props: MovieCardProps) {
   return (
     <div className="flex justify-center ">
       <div className="relative flex flex-col items-center shadow rounded-lg">
-        <Link href={`/movies/${convertTitleToSlug(props.title)}`}>
+        <Link href={`/movies/${props.slug}`}>
           <Image
             src={props.thumbnail}
             alt={props.thumbnail}

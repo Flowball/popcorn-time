@@ -1,5 +1,6 @@
 export const movieList = [
   {
+    slug: "the-shawshank-redemption",
     title: "The Shawshank Redemption",
     year: 1994,
     rating: "R",
@@ -36,6 +37,7 @@ export const movieList = [
   //     isTrending: true,
   //   },
   {
+    slug: "the-dark-knight",
     title: "The Dark Knight",
     year: 2008,
     rating: "PG-13",
@@ -47,6 +49,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "12-angry-men",
     title: "12 Angry Men",
     year: 1957,
     rating: "Not Rated",
@@ -58,6 +61,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "schindlers-list",
     title: "Schindler's List",
     year: 1993,
     rating: "R",
@@ -69,6 +73,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "the-lord-of-the-rings-the-return-of-the-king",
     title: "The Lord of the Rings: The Return of the King",
     year: 2003,
     rating: "PG-13",
@@ -81,6 +86,7 @@ export const movieList = [
     isTrending: true,
   },
   {
+    slug: "pulp-fiction",
     title: "Pulp Fiction",
     year: 1994,
     rating: "R",
@@ -92,6 +98,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "the-good-the-bad-and-the-ugly",
     title: "The Good, the Bad and the Ugly",
     year: 1966,
     rating: "Not Rated",
@@ -103,6 +110,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "fight-club",
     title: "Fight Club",
     year: 1999,
     rating: "R",
@@ -115,6 +123,7 @@ export const movieList = [
     isTrending: true,
   },
   {
+    slug: "forrest-gump",
     title: "Forrest Gump",
     year: 1994,
     rating: "PG-13",
@@ -126,6 +135,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "inception",
     title: "Inception",
     year: 2010,
     rating: "PG-13",
@@ -137,6 +147,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "the-lord-of-the-rings-the-fellowship-of-the-ring",
     title: "The Lord of the Rings: The Fellowship of the Ring",
     year: 2001,
     rating: "PG-13",
@@ -148,6 +159,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "star-wars-episode-v-the-empire-strikes-back",
     title: "Star Wars: Episode V - The Empire Strikes Back",
     year: 1980,
     rating: "PG",
@@ -160,6 +172,7 @@ export const movieList = [
     isTrending: true,
   },
   {
+    slug: "the-matrix",
     title: "The Matrix",
     year: 1999,
     rating: "R",
@@ -171,6 +184,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "goodfellas",
     title: "Goodfellas",
     year: 1990,
     rating: "R",
@@ -182,6 +196,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "one-flew-over-the-cuckoos-nest",
     title: "One Flew Over the Cuckoo's Nest",
     year: 1975,
     rating: "R",
@@ -193,6 +208,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "seven-samurai",
     title: "Seven Samurai",
     year: 1954,
     rating: "Not Rated",
@@ -204,6 +220,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BMTAzY2Q4OGUtMzg4Ni00YTBlLThkMDgtMTVlMjY0ZGRlMzdjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX1000_.jpg",
   },
   {
+    slug: "the-silence-of-the-lambs",
     title: "The Silence of the Lambs",
     year: 1991,
     rating: "R",
@@ -215,6 +232,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "casablanca",
     title: "Casablanca",
     year: 1942,
     rating: "PG",
@@ -227,6 +245,7 @@ export const movieList = [
     isTrending: true,
   },
   {
+    slug: "the-lord-of-the-rings-the-two-towers",
     title: "The Lord of the Rings: The Two Towers",
     year: 2002,
     rating: "PG-13",
@@ -238,6 +257,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,14,380,562_.jpg",
   },
   {
+    slug: "indiana-jones-and-the-raiders-of-the-lost-ark",
     title: "Indiana Jones and the Raiders of the Lost Ark",
     year: 1981,
     rating: "PG",
@@ -249,6 +269,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BNTU2ODkyY2MtMjU1NC00NjE1LWEzYjgtMWQ3MzRhMTE0NDc0XkEyXkFqcGdeQXVyMjM4MzQ4OTQ@._V1_QL75_UY562_CR1,0,380,562_.jpg",
   },
   {
+    slug: "city-of-god",
     title: "City of God",
     year: 2002,
     rating: "R",
@@ -260,6 +281,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BMGU5OWEwZDItNmNkMC00NzZmLTk1YTctNzVhZTJjM2NlZTVmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
   },
   {
+    slug: "once-upon-a-time-in-the-west",
     title: "Once Upon a Time in the West",
     year: 1968,
     rating: "PG-13",
@@ -271,6 +293,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BODQ3NDExOGYtMzI3Mi00NWRlLTkwNjAtNjc4MDgzZGJiZTA1XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_QL75_UX380_CR0,3,380,562_.jpg",
   },
   {
+    slug: "the-departed",
     title: "The Departed",
     year: 2006,
     rating: "R",
@@ -282,6 +305,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_QL75_UY562_CR0,0,380,562_.jpg",
   },
   {
+    slug: "rear-window",
     title: "Rear Window",
     year: 1954,
     rating: "PG",
@@ -293,6 +317,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BNGUxYWM3M2MtMGM3Mi00ZmRiLWE0NGQtZjE5ODI2OTJhNTU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_QL75_UY562_CR2,0,380,562_.jpg",
   },
   {
+    slug: "gladiator",
     title: "Gladiator",
     year: 2000,
     rating: "R",
@@ -304,6 +329,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,0,380,562_.jpg",
   },
   {
+    slug: "terminator-2-judgment-day",
     title: "Terminator 2: Judgment Day",
     year: 1991,
     rating: "R",
@@ -316,6 +342,7 @@ export const movieList = [
     isTrending: true,
   },
   {
+    slug: "whiplash",
     title: "Whiplash",
     year: 2014,
     rating: "R",
@@ -327,6 +354,7 @@ export const movieList = [
       "https://m.media-amazon.com/images/M/MV5BOTA5NDZlZGUtMjAxOS00YTRkLTkwYmMtYWQ0NWEwZDZiNjEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL75_UX380_CR0,0,380,562_.jpg",
   },
   {
+    slug: "psycho",
     title: "Psycho",
     year: 1960,
     rating: "R",
