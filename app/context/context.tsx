@@ -21,6 +21,7 @@ const MovieContext = createContext<ContextData>({} as ContextData);
 function MovieProvider(props: PropsWithChildren) {
    const [movieData, setMovieData] = useState<any>(movieList);
    const [isLoaded, setIsLoaded] = useState(false);
+   console.log(movieData);
 
    useEffect(() => {
       const lsMovieData = localStorage.getItem("movieData");
@@ -36,7 +37,6 @@ function MovieProvider(props: PropsWithChildren) {
    }, [movieData, isLoaded]);
 
    function bookmark(movie: any) {
-    console.log(movie)
       const updatedMovieData = movieData.map((item: any) =>
          item.slug === movie.slug ? { ...item, bookmark: !item.bookmark } : item
       );
