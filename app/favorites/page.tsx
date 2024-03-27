@@ -1,7 +1,7 @@
 export default function Favorites() {
-   return (
-      <main className="">
-         <h1>Favorites</h1>
-      </main>
-   );
+  return (
+    <main className="lg:ml-28">
+      <h1>Favorites</h1>
+    </main>
+  );
 }

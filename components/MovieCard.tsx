@@ -21,8 +21,8 @@ export default function MovieCard(props: MovieCardProps) {
     );
   }
   return (
-    <div className="flex justify-center ">
-      <div className="relative flex flex-col items-center shadow rounded-lg">
+    <div className="flex justify-center lg:ml-16">
+      <div className="relative flex flex-col items-center shadow rounded-lg mt-8">
         <Link href={`/movies/${props.slug}`}>
           <Image
             src={props.thumbnail}
