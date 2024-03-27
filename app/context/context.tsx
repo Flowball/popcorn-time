@@ -37,6 +37,10 @@ function MovieProvider(props: PropsWithChildren) {
    }, [movieData, isLoaded]);
 
    function bookmark(movie: any) {
+<<<<<<< Updated upstream
+=======
+      console.log(movie);
+>>>>>>> Stashed changes
       const updatedMovieData = movieData.map((item: any) =>
          item.slug === movie.slug ? { ...item, bookmark: !item.bookmark } : item
       );
