@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/search">
             <Search className="text-white text-lg font-bold" />
           </Link>
         </li>
