@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 
 interface iDefault {
   defaultValue: string | null;
@@ -17,7 +17,8 @@ const SearchInput = ({ defaultValue }: iDefault) => {
   };
 
   const handleSearch = () => {
-    if (inputValue) return router.push(`/search?q=${inputValue}`);
+    if (inputValue)
+      return router.push(`/search?=${encodeURIComponent(inputValue)}`);
     if (!inputValue) return router.push("/search");
   };
 
@@ -25,8 +26,12 @@ const SearchInput = ({ defaultValue }: iDefault) => {
     if (event.key === "Enter") return handleSearch();
   };
 
+  useEffect(() => {
+    setValue(defaultValue);
+  }, [defaultValue]);
+
   return (
-    <div className="search__input border-[2px] border-solid border-slate-500 flex flex-row items-center gap-5 p-1 rounded-[15px]">
+    <div className="search__input border-[2px] border-solid border-slate-500 flex flex-row ml-20 items-center gap-5 p-1 rounded-[15px]">
       <label htmlFor="inputId"></label>
 
       <input
