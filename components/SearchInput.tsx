@@ -27,7 +27,7 @@ const SearchInput = ({ defaultValue }: iDefault) => {
   };
 
   return (
-    <div className="search__input border-[2px] border-solid border-slate-500 flex flex-row ml-20 items-center gap-5 p-1 rounded-[15px]">
+    <div className="ml-20 flex flex-row items-center gap-5 rounded-[15px] border-2 border-solid border-slate-500 p-1">
       <label htmlFor="inputId"></label>
 
       <input
@@ -37,7 +37,7 @@ const SearchInput = ({ defaultValue }: iDefault) => {
         value={inputValue || ""}
         onChange={handleChange}
         onKeyDown={handleKeyPress}
-        className="bg-[transparent] outline-none border-none w-full py-3 pl-2 pr-3"
+        className="w-full border-none bg-transparent py-3 pl-2 pr-3 outline-none"
       />
     </div>
   );

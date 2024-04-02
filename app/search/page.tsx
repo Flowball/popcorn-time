@@ -45,7 +45,7 @@ export default function SearchPage() {
           </div>
         ))
       ) : (
-        <p className="flex justify-center mt-16">No movies where found</p>
+        <p className="mt-16 flex justify-center">No movies where found</p>
       )}
     </div>
   );
