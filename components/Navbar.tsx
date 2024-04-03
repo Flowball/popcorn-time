@@ -1,24 +1,43 @@
+"use client";
 import { Bookmark, Home, Search } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
+  const path = usePathname();
+
   return (
-    <nav className=" h-12 w-full bg-gray-800 py-3 lg:fixed lg:h-screen lg:w-24 ">
-      <ul className="flex flex-row justify-center space-x-10 lg:flex-col lg:space-x-0 lg:space-y-10 lg:pl-8 lg:pt-5">
+    <nav className="flex size-full justify-between bg-gray-800">
+      <ul className="flex w-full justify-center gap-6 p-4">
         <li>
           <Link href="/">
-            <Home className="text-white" />
+            <Home
+              className={
+                path === "/" ? `size-9 text-yellow-300` : `size-9 text-white`
+              }
+            />
           </Link>
         </li>
-
         <li>
           <Link href="/favorites">
-            <Bookmark className="text-lg font-bold text-white" />
+            <Bookmark
+              className={
+                path === "/favorites"
+                  ? `size-9 text-yellow-300`
+                  : `size-9 text-white`
+              }
+            />
           </Link>
         </li>
         <li>
           <Link href="/search">
-            <Search className="text-lg font-bold text-white" />
+            <Search
+              className={
+                path === "/search"
+                  ? `size-9 text-yellow-300`
+                  : `size-9 text-white`
+              }
+            />
           </Link>
         </li>
       </ul>
