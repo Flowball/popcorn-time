@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v4
-      - name: NPM Install
+      - name: npm Install
         run: npm ci
       - name: Run linting
         run: npm run lint
