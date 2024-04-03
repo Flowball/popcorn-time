@@ -1,11 +1,15 @@
 "use client";
 import { useMovieContext } from "@/app/context/context";
+import Rating from "@/components/Rating";
 import { MinusCircleIcon, PlusCircleIcon } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 type MovieProps = { params: { slug: string } };
 
 export default function Slug({ params }: MovieProps) {
+  /* FEATURE FLAG LIVES HERE KRISTIAN!!! */
+  const [featureFlag, setFeatureFlag] = useState(true);
   const { bookmark, movieData } = useMovieContext();
   const movie = getMovie(params.slug);
 
@@ -25,6 +29,7 @@ export default function Slug({ params }: MovieProps) {
             height={300}
             className="rounded-lg object-contain shadow lg:w-4/5 "
           />
+
           <div className="grid px-2 lg:grid-rows-3">
             <div
               className="flex items-center justify-center gap-2 rounded-lg bg-yellow-400 p-2 text-sm transition-all lg:text-4xl"
@@ -51,6 +56,11 @@ export default function Slug({ params }: MovieProps) {
               </div>
               <div>
                 Genre: <b>{movie?.genre}</b>
+                {featureFlag && (
+                  <div className="text-6xl">
+                    <Rating />
+                  </div>
+                )}
               </div>
             </div>
             <div className="hidden grid-cols-2 justify-between gap-2 lg:grid ">
