@@ -3,7 +3,6 @@ import { useMovieContext } from "@/app/context/context";
 import { BookmarkIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 interface MovieCardProps {
   year: number;
@@ -15,7 +14,6 @@ interface MovieCardProps {
 }
 
 export default function MovieCard(props: MovieCardProps) {
-  
   const { bookmark } = useMovieContext();
   // MOVE THIS FUNCTION TO CONTEXT LATER!!!!
 
@@ -31,7 +29,7 @@ export default function MovieCard(props: MovieCardProps) {
             className="rounded-t-lg object-contain"
           />
         </Link>
-        
+
         <div
           className="absolute right-0 top-0 cursor-pointer rounded-bl-lg rounded-tr-lg bg-yellow-400 p-2"
           onClick={() => bookmark(props)}
