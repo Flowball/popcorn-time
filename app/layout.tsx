@@ -20,10 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <MovieProvider>
-          <div>
-            {<Navbar />}
-            {children}
-          </div>
+          <Navbar />
+          {children}
         </MovieProvider>
       </body>
     </html>

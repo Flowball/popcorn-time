@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# School assignment Application README
 
-## Getting Started
+This README provides guidance on installation, development, and troubleshooting for a Movie data Application developed with Nextjs, React and Tailwind CSS.
 
-First, run the development server:
+## Demo link
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+--- link ---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Prerequisites
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Before starting the project, ensure the following prerequisites are met:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Node.js installed on your machine
+- npm package installed
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+Follow these steps to get started:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the project:** Use the following command to clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   git clone https://github.com/Flowball/popcorn-time.git
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies:** Navigate to the cloned directory and install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Development
+
+Once installed, follow these steps for development:
+
+1. **Start the development server:** Run the following command:
+
+   ```
+   npm run dev
+   ```
+
+### NextJS app router
+
+NextJS app router is used for this projekt.
+
+### Mockup data
+
+- **data/index.ts**:
+
+### React Components
+
+- **Context.tsx**: Data provider
+- **layout.tsx**: Layout for application
+- **MovieCard.tsx**: Cards for mapping and display all movies
+- **Navbar.tsx**: Navbar
+- **Recommended.tsx**: Recommended function
+- **Trending.tsx**: Trending function
+- **SearchInput.tsx**: Search function
+- **Rating.tsx**: Feature Flag function
+
+### Tailwind CSS
+
+Tailwind CSS is used for styling throughout the application.
+
+## Troubleshooting
+
+If you encounter any issues during installation or development, ensure prerequisites are met and refer to React's, tailwinds and NextJS documentation for solutions.
