@@ -27,14 +27,15 @@ export default function SearchPage() {
   }, [searchQuery, movieData]);
 
   return (
-    <div className="ml-6">
+    <div className="container">
       <SearchInput defaultValue={searchQuery || ""} />
       {/* Använder searchQuery för defaultValue */}
       {/* Visa de filtrerade filmerna eller ett meddelande */}
       {profileData.length > 0 ? (
-        profileData.map((movie) => (
-          <div key={movie.slug} className="m-6">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-3">
+          {profileData.map((movie) => (
             <MovieCard
+              key={movie.slug}
               year={movie.year}
               slug={movie.slug}
               rating={movie.rating}
@@ -42,8 +43,8 @@ export default function SearchPage() {
               title={movie.title}
               bookmark={movie.bookmark}
             />
-          </div>
-        ))
+          ))}
+        </div>
       ) : (
         <p className="mt-16 flex justify-center">No movies where found</p>
       )}
