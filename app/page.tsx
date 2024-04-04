@@ -3,7 +3,7 @@ import Trending from "@/components/Trending";
 
 export default function Home() {
   return (
-    <main className="container">
+    <main className="container ">
       <Trending />
       <Recommended />
     </main>
