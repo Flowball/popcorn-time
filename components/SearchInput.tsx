@@ -27,7 +27,7 @@ const SearchInput = ({ defaultValue }: iDefault) => {
   };
 
   return (
-    <div className="ml-20 flex flex-row items-center gap-5 rounded-[15px] border-2 border-solid border-slate-500 p-1">
+    <div className="m-8 flex flex-row items-center gap-5 rounded-[10px] border-2 border-solid border-slate-500 p-1">
       <label htmlFor="inputId"></label>
 
       <input
