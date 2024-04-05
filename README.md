@@ -4,7 +4,7 @@ This README provides guidance on installation, development, and troubleshooting 
 
 ## Demo link
 
---- link ---
+[--- link ---](https://popcorn-time-sepia.vercel.app/)
 
 ## Prerequisites
 
