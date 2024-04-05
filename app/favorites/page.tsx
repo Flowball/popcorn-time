@@ -7,7 +7,7 @@ export default function Favorites() {
   const { movieData } = useMovieContext();
   return (
     <main className="container ">
-      <h1 className=" m-8 flex justify-center text-2xl md:text-3xl lg:text-4xl">
+      <h1 className="m-8 flex justify-center text-2xl md:text-3xl lg:text-4xl">
         {" "}
         Favorites{" "}
       </h1>
