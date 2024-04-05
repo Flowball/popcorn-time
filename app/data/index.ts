@@ -7,6 +7,7 @@ export type Movie = {
   genre: string;
   synopsis: string;
   thumbnail: string;
+  bookmark?: boolean;
 };
 
 export const movieList = [

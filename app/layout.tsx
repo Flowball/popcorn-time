@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import MovieProvider from "./context/context";
 import "./globals.css";
 
@@ -19,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="no-scrollbar">
       <body className={inter.className}>
-        <MovieProvider>
-          <Navbar />
-          {children}
-        </MovieProvider>
+        <Suspense>
+          <MovieProvider>
+            <Navbar />
+            {children}
+          </MovieProvider>
+        </Suspense>
       </body>
     </html>
   );
